@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Lumière — Haute Parfumerie Since 1927</title>
+  <meta name="description" content="Maison Lumière crafts rare, hand-blended fine fragrances in Grasse, France. Discover Nuit Éternelle and our collection of haute parfumerie.">
+  <link rel="icon" type="image/svg+xml" href="assets/bottle-nuit.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript>
+    <style>
+      .preloader, .cursor, .cursor-dot, .scroll-progress { display: none !important; }
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      .split-word { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <span class="preloader__mono">ML</span>
+      <span class="preloader__name">MAISON LUMIÈRE</span>
+      <span class="preloader__bar"><span class="preloader__fill"></span></span>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div class="scroll-progress"><span id="scroll-progress-bar"></span></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" data-hover>
+        <span class="nav__logo-mark">ML</span>
+        <span class="nav__logo-text">Maison<em>Lumière</em></span>
+      </a>
+      <ul class="nav__list" id="nav-list">
+        <li><a href="#collections" class="nav__link" data-hover>Collections</a></li>
+        <li><a href="#signature" class="nav__link" data-hover>Signature</a></li>
+        <li><a href="#heritage" class="nav__link" data-hover>Heritage</a></li>
+        <li><a href="#craft" class="nav__link" data-hover>The Craft</a></li>
+        <li><a href="#voices" class="nav__link" data-hover>Voices</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#newsletter" class="btn btn--accent btn--sm" data-hover>Acquire</a>
+        <button class="nav__burger" id="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" data-parallax="0.25">
+        <div class="hero__glow hero__glow--accent"></div>
+        <div class="hero__glow hero__glow--violet"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="hero__inner container">
+        <div class="hero__copy">
+          <p class="hero__eyebrow reveal" data-reveal><span class="rule"></span>Haute Parfumerie · Grasse, France</p>
+          <h1 class="hero__title">
+            <span class="split-line"><span class="split-word" data-split>The Art of</span></span>
+            <span class="split-line"><span class="split-word split-word--accent" data-split>Scent</span></span>
+            <span class="split-line"><span class="split-word" data-split>&amp; Memory</span></span>
+          </h1>
+          <p class="hero__lede reveal" data-reveal>
+            For nearly a century, Maison Lumière has composed fragrances that behave
+            less like perfume and more like a presence — arriving before you do,
+            lingering long after you leave.
+          </p>
+          <div class="hero__cta reveal" data-reveal>
+            <a href="#collections" class="btn btn--accent" data-hover data-magnetic>
+              <span>Explore the Collection</span>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#signature" class="btn btn--ghost" data-hover data-magnetic><span>Our Signature</span></a>
+          </div>
+          <div class="hero__meta reveal" data-reveal>
+            <div class="hero__meta-item"><strong>98</strong><span>Years of craft</span></div>
+            <div class="hero__meta-item"><strong>12</strong><span>Rare Eaux de Parfum</span></div>
+            <div class="hero__meta-item"><strong>24h</strong><span>Maceration per batch</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-parallax="0.12">
+          <div class="hero__ring" aria-hidden="true"></div>
+          <div class="hero__ring hero__ring--2" aria-hidden="true"></div>
+          <img src="assets/hero-bottle.svg" alt="Nuit Éternelle flacon by Maison Lumière" class="hero__bottle" id="hero-bottle">
+          <div class="hero__badge">
+            <svg viewBox="0 0 100 100" class="hero__badge-circle" aria-hidden="true">
+              <defs><path id="circlePath" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/></defs>
+              <text><textPath href="#circlePath">EXTRAIT DE PARFUM · 30 ML · GRASSE 1927 · </textPath></text>
+            </svg>
+            <span class="hero__badge-center">Édition<br>Limitée</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#collections" class="hero__scroll" data-hover>
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Hand-blended in Grasse</span><span class="marquee__dot">✦</span>
+          <span>Rare absolutes</span><span class="marquee__dot">✦</span>
+          <span>Small-batch maceration</span><span class="marquee__dot">✦</span>
+          <span>Cruelty free</span><span class="marquee__dot">✦</span>
+          <span>Refillable crystal</span><span class="marquee__dot">✦</span>
+        </div>
+        <div class="marquee__group">
+          <span>Hand-blended in Grasse</span><span class="marquee__dot">✦</span>
+          <span>Rare absolutes</span><span class="marquee__dot">✦</span>
+          <span>Small-batch maceration</span><span class="marquee__dot">✦</span>
+          <span>Cruelty free</span><span class="marquee__dot">✦</span>
+          <span>Refillable crystal</span><span class="marquee__dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== COLLECTIONS ===== -->
+    <section class="collections section" id="collections">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow reveal" data-reveal><span class="rule"></span>The Collection</p>
+          <h2 class="section-head__title reveal" data-reveal>Six Compositions,<br><em>Six Temperaments</em></h2>
+          <p class="section-head__lede reveal" data-reveal>
+            Each Maison Lumière fragrance begins with a single rare material — an absolute,
+            a resin, a petal harvested at dawn — and is built around it like a piece of music
+            around a theme. Choose the register that speaks yours.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <!-- Product 1 -->
+          <article class="card reveal" data-reveal data-tilt>
+            <div class="card__media">
+              <span class="card__tag">Bestseller</span>
+              <img src="assets/bottle-nuit.svg" alt="Nuit Éternelle — amber, oud and vanilla eau de parfum">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Nuit Éternelle</h3>
+              <p class="card__notes">Amber · Oud · Bourbon Vanilla</p>
+              <p class="card__desc">A midnight garden wrapped in amber warmth. Smoked oud rises through vanilla orchid for a trail that feels like velvet in candlelight.</p>
+              <div class="card__foot">
+                <span class="card__price">$189<small>/ 50ml</small></span>
+                <a href="product.html?id=nuit" class="card__link" data-hover>Discover <i>→</i></a>
+              </div>
+            </div>
+            <div class="card__shine"></div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="card reveal" data-reveal data-tilt>
+            <div class="card__media">
+              <span class="card__tag">New</span>
+              <img src="assets/bottle-rose.svg" alt="Rose Sauvage — Bulgarian rose and saffron eau de parfum">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Rose Sauvage</h3>
+              <p class="card__notes">Bulgarian Rose · Saffron · Patchouli</p>
+              <p class="card__desc">Twenty thousand petals per flacon. Wild rose absolute is pierced with saffron and grounded in dark patchouli — romance with an edge.</p>
+              <div class="card__foot">
+                <span class="card__price">$210<small>/ 50ml</small></span>
+                <a href="product.html?id=rose" class="card__link" data-hover>Discover <i>→</i></a>
+              </div>
+            </div>
+            <div class="card__shine"></div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="card reveal" data-reveal data-tilt>
+            <div class="card__media">
+              <img src="assets/bottle-citron.svg" alt="Citron Blanc — bergamot, neroli and white musk eau de parfum">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Citron Blanc</h3>
+              <p class="card__notes">Bergamot · Neroli · White Musk</p>
+              <p class="card__desc">Sun over the Côte d'Azur, bottled. Sun-ripened bergamot and orange blossom drift over clean white musk — effortless, luminous, all-day.</p>
+              <div class="card__foot">
+                <span class="card__price">$165<small>/ 50ml</small></span>
+                <a href="product.html?id=citron" class="card__link" data-hover>Discover <i>→</i></a>
+              </div>
+            </div>
+            <div class="card__shine"></div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="card reveal" data-reveal data-tilt>
+            <div class="card__media">
+              <span class="card__tag card__tag--dark">Rare</span>
+              <img src="assets/bottle-oud.svg" alt="Oud Royal — agarwood, leather and incense eau de parfum">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Oud Royal</h3>
+              <p class="card__notes">Agarwood · Leather · Incense</p>
+              <p class="card__desc">Aged Laotian oud, softened with suede-like leather and church incense. Weighty, regal, unforgettable — worn best at night.</p>
+              <div class="card__foot">
+                <span class="card__price">$295<small>/ 75ml</small></span>
+                <a href="product.html?id=oud" class="card__link" data-hover>Discover <i>→</i></a>
+              </div>
+            </div>
+            <div class="card__shine"></div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="card reveal" data-reveal data-tilt>
+            <div class="card__media">
+              <img src="assets/bottle-fleur.svg" alt="Fleur de Lune — jasmine, tuberose and sandalwood eau de parfum">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Fleur de Lune</h3>
+              <p class="card__notes">Jasmine · Tuberose · Sandalwood</p>
+              <p class="card__desc">White florals gathered under a full moon. Night-blooming jasmine and creamy tuberose rest on a bed of Mysore sandalwood.</p>
+              <div class="card__foot">
+                <span class="card__price">$185<small>/ 50ml</small></span>
+                <a href="product.html?id=fleur" class="card__link" data-hover>Discover <i>→</i></a>
+              </div>
+            </div>
+            <div class="card__shine"></div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="card reveal" data-reveal data-tilt>
+            <div class="card__media">
+              <img src="assets/bottle-vetiver.svg" alt="Vétiver Noir — vetiver, cedar and tonka eau de parfum">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Vétiver Noir</h3>
+              <p class="card__notes">Vetiver · Cedarwood · Tonka Bean</p>
+              <p class="card__desc">Haitian vetiver smoked over cedar and sweetened with tonka. A quiet, confident signature that wears like white linen and dark wood.</p>
+              <div class="card__foot">
+                <span class="card__price">$175<small>/ 50ml</small></span>
+                <a href="product.html?id=vetiver" class="card__link" data-hover>Discover <i>→</i></a>
+              </div>
+            </div>
+            <div class="card__shine"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SIGNATURE / FEATURED PRODUCT ===== -->
+    <section class="signature section" id="signature">
+      <div class="signature__bg" aria-hidden="true"></div>
+      <div class="container signature__inner">
+        <div class="signature__visual reveal" data-reveal>
+          <div class="signature__halo"></div>
+          <img src="assets/hero-bottle.svg" alt="Nuit Éternelle limited edition crystal flacon" class="signature__bottle" id="signature-bottle">
+        </div>
+
+        <div class="signature__copy">
+          <p class="section-head__eyebrow reveal" data-reveal><span class="rule"></span>La Pièce de Résistance</p>
+          <h2 class="signature__title reveal" data-reveal>Nuit <em>Éternelle</em></h2>
+          <p class="signature__price reveal" data-reveal>$189 <span>— 50 ml · Extrait de Parfum</span></p>
+          <p class="signature__desc reveal" data-reveal>
+            Our most awarded composition. Nuit Éternelle opens with a burst of pink pepper
+            and ripe plum, melts into a heart of jasmine and Moroccan rose absolute, and
+            settles into a long, warm base of amber, oud and Bourbon vanilla. It is a
+            fragrance for the hours that belong to you — a slow exhale after a long day,
+            a candlelit dinner, a walk home under streetlights.
+          </p>
+          <p class="signature__desc reveal" data-reveal>
+            Each batch is macerated for six weeks, hand-bottled in Baccarat crystal, and
+            finished with a 24-karat gold collar. Only 500 numbered flacons are released
+            each year.
+          </p>
+
+          <div class="notes reveal" data-reveal>
+            <div class="notes__col">
+              <h4 class="notes__label">Top Notes</h4>
+              <ul class="notes__list">
+                <li>Pink Pepper</li>
+                <li>Ripe Plum</li>
+                <li>Saffron Thread</li>
+              </ul>
+            </div>
+            <div class="notes__col notes__col--mid">
+              <h4 class="notes__label">Heart Notes</h4>
+              <ul class="notes__list">
+                <li>Jasmine Absolute</li>
+                <li>Moroccan Rose</li>
+                <li>Orris Butter</li>
+              </ul>
+            </div>
+            <div class="notes__col">
+              <h4 class="notes__label">Base Notes</h4>
+              <ul class="notes__list">
+                <li>Amber Resin</li>
+                <li>Laotian Oud</li>
+                <li>Bourbon Vanilla</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="signature__actions reveal" data-reveal>
+            <a href="product.html?id=nuit" class="btn btn--accent" data-hover data-magnetic><span>Acquire — $189</span></a>
+            <a href="#craft" class="btn btn--ghost" data-hover data-magnetic><span>How it's made</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HERITAGE ===== -->
+    <section class="heritage section" id="heritage">
+      <div class="container">
+        <div class="heritage__grid">
+          <div class="heritage__copy">
+            <p class="section-head__eyebrow reveal" data-reveal><span class="rule"></span>Notre Héritage</p>
+            <h2 class="section-head__title reveal" data-reveal>A House Built<br><em>on Patience</em></h2>
+            <p class="reveal" data-reveal>
+              In 1927, perfumer Émile Lumière opened a modest atelier on a hillside in
+              Grasse, then the undisputed capital of the world's flower fields. He had a
+              single conviction: that a perfume should never smell like chemistry — it
+              should smell like a place, a moment, a person.
+            </p>
+            <p class="reveal" data-reveal>
+              Three generations later, that conviction has not changed. We still harvest
+              with the same families of growers, still distil in copper alembics older
+              than the house itself, and still refuse to release a composition until it
+              has rested for a minimum of six weeks. Time, we believe, is the rarest
+              ingredient of all.
+            </p>
+            <blockquote class="heritage__quote reveal" data-reveal>
+              <p>"Perfume is the most intense form of memory. We are merely its editors."</p>
+              <cite>— Émile Lumière, founder, 1927</cite>
+            </blockquote>
+          </div>
+
+          <div class="heritage__stats">
+            <div class="stat reveal" data-reveal>
+              <span class="stat__num" data-count="98">0</span>
+              <span class="stat__label">Years in Grasse</span>
+            </div>
+            <div class="stat reveal" data-reveal>
+              <span class="stat__num" data-count="312">0</span>
+              <span class="stat__label">Rare ingredients sourced</span>
+            </div>
+            <div class="stat reveal" data-reveal>
+              <span class="stat__num" data-count="6">0</span>
+              <span class="stat__label">Weeks of maceration</span>
+            </div>
+            <div class="stat reveal" data-reveal>
+              <span class="stat__num" data-count="500">0</span>
+              <span class="stat__label">Flacons per annual release</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THE CRAFT ===== -->
+    <section class="craft section" id="craft">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-head__eyebrow reveal" data-reveal><span class="rule"></span>L'Art de la Composition</p>
+          <h2 class="section-head__title reveal" data-reveal>The Making of a <em>Maison</em> Fragrance</h2>
+          <p class="section-head__lede reveal" data-reveal>
+            From field to flacon, every Maison Lumière eau de parfum passes through four
+            unhurried stages. None of them can be rushed, and none of them are outsourced.
+          </p>
+        </div>
+
+        <div class="craft__steps">
+          <article class="step reveal" data-reveal>
+            <span class="step__num">I</span>
+            <h3 class="step__title">The Harvest</h3>
+            <p class="step__text">
+              Jasmine is picked at dawn before the sun touches the petals; rose centifolia
+              is gathered in the cool of May mornings. Our grower partners have worked with
+              the house for four generations — no intermediaries, no compromise.
+            </p>
+          </article>
+          <article class="step reveal" data-reveal>
+            <span class="step__num">II</span>
+            <h3 class="step__title">The Distillation</h3>
+            <p class="step__text">
+              Enfleurage and copper-alembic distillation extract absolutes with the
+              delicacy industrial methods destroy. A single kilo of jasmine absolute
+              requires eight hundred kilos of blossoms.
+            </p>
+          </article>
+          <article class="step reveal" data-reveal>
+            <span class="step__num">III</span>
+            <h3 class="step__title">The Composition</h3>
+            <p class="step__text">
+              Our perfumers blend by hand on marble, adjusting accords drop by drop until
+              the formula sings — often over dozens of trials. Only one in four trials ever
+              earns the Lumière name.
+            </p>
+          </article>
+          <article class="step reveal" data-reveal>
+            <span class="step__num">IV</span>
+            <h3 class="step__title">The Maceration</h3>
+            <p class="step__text">
+              The finished concentrate rests in dark glass for six weeks, allowing the
+              materials to marry. Then it is hand-bottled in crystal, sealed with a gold
+              collar, and numbered.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="voices section" id="voices">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-head__eyebrow reveal" data-reveal><span class="rule"></span>Voices</p>
+          <h2 class="section-head__title reveal" data-reveal>Worn &amp; <em>Remembered</em></h2>
+        </div>
+
+        <div class="grid grid--3">
+          <figure class="voice reveal" data-reveal data-tilt>
+            <div class="voice__stars">★★★★★</div>
+            <blockquote>"Nuit Éternelle is the only fragrance my husband recognises me by. Three years, countless compliments, zero regrets."</blockquote>
+            <figcaption><strong>Camille R.</strong><span>Paris · verified collector</span></figcaption>
+          </figure>
+          <figure class="voice reveal" data-reveal data-tilt>
+            <div class="voice__stars">★★★★★</div>
+            <blockquote>"Oud Royal is pure theatre. I wore it to a gallery opening and three people asked what I had on before I reached the door."</blockquote>
+            <figcaption><strong>Julian M.</strong><span>New York · Oud Royal owner</span></figcaption>
+          </figure>
+          <figure class="voice reveal" data-reveal data-tilt>
+            <div class="voice__stars">★★★★★</div>
+            <blockquote>"The refillable crystal alone is worth it. Rose Sauvage smells like my grandmother's garden on the first day of spring."</blockquote>
+            <figcaption><strong>Amara D.</strong><span>London · Rose Sauvage owner</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter section" id="newsletter">
+      <div class="container newsletter__inner reveal" data-reveal>
+        <div class="newsletter__copy">
+          <p class="section-head__eyebrow"><span class="rule"></span>Le Cercle Privé</p>
+          <h2 class="newsletter__title">Join the <em>Private Circle</em></h2>
+          <p class="newsletter__text">
+            Members receive first access to limited editions, an invitation to our annual
+            harvest in Grasse, and a complimentary discovery set of three 2 ml vials with
+            their first full-bottle order. No noise — only scent.
+          </p>
+        </div>
+        <form class="newsletter__form" id="newsletter-form" novalidate>
+          <div class="field">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email">Email address</label>
+          </div>
+          <button type="submit" class="btn btn--accent btn--full" data-hover><span>Request Invitation</span></button>
+          <p class="newsletter__note" id="form-note">We respect your privacy. Unsubscribe at any time.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo" data-hover>
+            <span class="nav__logo-mark">ML</span>
+            <span class="nav__logo-text">Maison<em>Lumière</em></span>
+          </a>
+          <p>Haute parfumerie composed and hand-bottled in Grasse, France, since 1927. Refillable crystal. Cruelty free. Always small-batch.</p>
+          <div class="footer__social">
+            <a href="#" data-hover aria-label="Instagram">IG</a>
+            <a href="#" data-hover aria-label="Pinterest">PIN</a>
+            <a href="#" data-hover aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Maison</h4>
+          <ul>
+            <li><a href="#heritage" data-hover>Our Heritage</a></li>
+            <li><a href="#craft" data-hover>The Craft</a></li>
+            <li><a href="#collections" data-hover>Collections</a></li>
+            <li><a href="#voices" data-hover>Client Voices</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Fragrances</h4>
+          <ul>
+            <li><a href="#signature" data-hover>Nuit Éternelle</a></li>
+            <li><a href="#collections" data-hover>Rose Sauvage</a></li>
+            <li><a href="#collections" data-hover>Oud Royal</a></li>
+            <li><a href="#collections" data-hover>Vétiver Noir</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Client Care</h4>
+          <ul>
+            <li><a href="#newsletter" data-hover>Private Circle</a></li>
+            <li><a href="#" data-hover>Shipping &amp; Returns</a></li>
+            <li><a href="#" data-hover>Refill Program</a></li>
+            <li><a href="#" data-hover>Contact the Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 1927–2026 Maison Lumière SAS. All rights reserved.</p>
+        <p>14 Chemin des Fleurs, 06130 Grasse, France</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
