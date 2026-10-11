@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 132 120 172" width="480" height="688">
+  <defs>
+    <linearGradient id="cap-vetiver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8f3d05"/>
+      <stop offset=".3" stop-color="#ffd1a8"/>
+      <stop offset=".55" stop-color="#ff8c42"/>
+      <stop offset=".8" stop-color="#ffd9b8"/>
+      <stop offset="1" stop-color="#8f3d05"/>
+    </linearGradient>
+    <linearGradient id="liquid-vetiver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a7a5e"/>
+      <stop offset=".55" stop-color="#26402c"/>
+      <stop offset="1" stop-color="#08150c"/>
+    </linearGradient>
+    <linearGradient id="glass-vetiver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".26"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="streak-vetiver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="100" cy="298" rx="62" ry="12" fill="#000" opacity=".35"/>
+
+  <path d="M74 14 h52 v6 h-52 z" fill="#5c2a05"/>
+  <rect x="74" y="20" width="52" height="46" rx="4" fill="url(#cap-vetiver)"/>
+  <rect x="74" y="20" width="52" height="46" rx="4" fill="none" stroke="#7a3304" stroke-width="1"/>
+  <rect x="82" y="26" width="9" height="34" fill="#fff" opacity=".4"/>
+  <rect x="88" y="66" width="24" height="12" rx="3" fill="url(#cap-vetiver)"/>
+  <rect x="92" y="78" width="16" height="14" fill="#26402c" opacity=".9"/>
+
+  <path d="M46 96 q-6 84 6 168 h96 q12-84 6-168 z" fill="url(#liquid-vetiver)"/>
+  <path d="M46 96 q-6 84 6 168 h96 q12-84 6-168 z" fill="url(#glass-vetiver)"/>
+  <path d="M52 100 q-4 82 4 160 h92 q8-78 4-160 z" fill="none" stroke="#ff8c42" stroke-width="2" opacity=".8"/>
+
+  <path d="M60 108 q-3 66 2 130 l14 2 q-4-70 -1-132 z" fill="url(#streak-vetiver)"/>
+  <path d="M138 112 q4 62 1 122 l-10-2 q3-64 0-120 z" fill="#fff" opacity=".1"/>
+
+  <ellipse cx="100" cy="96" rx="52" ry="7" fill="#5a7a5e" opacity=".4"/>
+
+  <circle cx="100" cy="182" r="27" fill="none" stroke="#ff8c42" stroke-width="1.6"/>
+  <circle cx="100" cy="182" r="22" fill="none" stroke="#ff8c42" stroke-width=".7" opacity=".6"/>
+  <text x="100" y="190" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#ffb273" letter-spacing="1">VN</text>
+
+  <path d="M40 92 h120" stroke="#ffd1a8" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+  <path d="M40 268 h120" stroke="#ffd1a8" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+</svg>
